@@ -1,9 +1,10 @@
 #include <iostream>
 #include <omega_language/lexer/Lexer.h>
 
+
 namespace omega_language {
 
-Lexer::Lexer(const std::string &file_content, const int pos)
+Lexer::Lexer(const std::string &file_content, const size_t pos)
     : file_content(std::move(file_content)), pos(pos) {}
 
 std::expected<std::vector<Token>, std::string_view> tokenize() {
