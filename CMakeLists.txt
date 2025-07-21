@@ -17,7 +17,3 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 add_subdirectory(src/lexer)
 target_link_libraries(${PROJECT_NAME} PRIVATE lexer)
 
-
-# caca
-add_subdirectory(src/caca)
-target_link_libraries(${PROJECT_NAME} PRIVATE caca)
